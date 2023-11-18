@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+body {
+  background-color: rgba(232, 233, 235, 0.518);
+}
+.header {
+  margin: 5px;
+}
+
+.login i {
+  font-size: small;
+}
+
+.login {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 5px 8px;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button i {
+  font-size: 22px;
+}
+
+.heading {
+  margin-left: 40%;
+}
+
+.container {
+  margin: 25px 40px;
+  display: grid;
+  grid-template-columns: auto;
+}
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 5px 9px 15px 1px rgba(202, 193, 193, 0.69);
+  -webkit-box-shadow: 5px 9px 15px 1px rgba(200, 193, 193, 0.69);
+  -moz-box-shadow: 5px 9px 15px 1px rgba(184, 172, 172, 0.69);
+  transition: 0.9s ease;
+}
+.card button {
+  float: right;
+}
+.card .tag {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.card:hover {
+  box-shadow: 6px 7px 32px 8px rgba(69, 65, 65, 0.69);
+  -webkit-box-shadow: 6px 7px 32px 8px rgba(69, 65, 65, 0.69);
+  -moz-box-shadow: 6px 7px 32px 8px rgba(69, 65, 65, 0.69);
+}
+
+.orange {
+  background-color: rgb(212, 170, 15);
+  color: rgb(255, 255, 255);
+}
+.blue {
+  background-color: rgb(33, 167, 224);
+  color: rgb(255, 255, 255);
+}
+.green {
+  background-color: rgb(83, 216, 31);
+  color: rgb(255, 255, 255);
+}
+.red {
+  background-color: rgb(216, 31, 133);
+  color: rgb(255, 255, 255);
+}
+
+.default {
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 25, 25);
+}
+
+/* form */
+.model {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: 1;
+  position: fixed;
+  color: aliceblue;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.model-box {
+  border-radius: 10px;
+  margin: 6% auto;
+  width: 45%;
+  padding: 20px;
+  background-color: rgb(2, 121, 158);
+}
+.model input {
+  width: 100%;
+  padding: 3px;
+  margin: 10px 0;
+}
+.model textarea {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.model button {
+  width: 102%;
+  background-color: rgb(40, 37, 37);
+  padding: 5px 0;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    grid-template-columns: auto auto;
+  }
+  .model-box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: auto;
+  }
+  .model-box {
+    width: 65%;
+  }
+}
